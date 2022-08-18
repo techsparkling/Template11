@@ -1,0 +1,818 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosting Landing Page</title>
+    <style>
+         html {
+     scroll-behavior: smooth;
+ }
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+ }
+ :root {
+     --clr-bg-primary : #07A2F4;
+     --clr-text-primary:#14263F;
+     --clr-black-primary:#353535;
+     --clr-transparent-btn: linear-gradient(to right bottom, #09bcf8, #00b6f8, #00aff7, #00a9f6, #00a2f5, #009cf4, #0097f3, #0091f2, #008af1, #0083f0, #007cef, #0675ed);
+     
+}
+.container {
+     display: block;
+     margin: auto;
+    
+     width: 85vw;
+}
+.btn {
+     background-image: linear-gradient(to right bottom, #09bcf8, #00b6f8, #00aff7, #00a9f6, #00a2f5, #009cf4, #0097f3, #0091f2, #008af1, #0083f0, #007cef, #0675ed);
+     color: white;
+     border-radius: 5px;
+     border: none;
+     padding: 0.8rem 2rem;
+     cursor: pointer;
+     border: 2px solid var(--clr-bg-primary)
+
+}.mb-2{
+     margin-bottom:2rem ;
+}
+.mt-2{
+     margin-top:2rem;
+}
+
+h1 {
+     font-size: 3rem;
+}
+
+p {
+     font-size: 0.88rem;
+}
+
+ul {
+     list-style-type: none;
+}
+
+.transparant-btn {
+     margin-top: 2rem;
+     padding: 0.8rem 2rem;
+     color: var(--clr-bg-primary);
+     border-radius: 5px;
+     cursor: pointer;
+     background-color: transparent;
+     font-weight: bold;
+     border: 2px solid var(--clr-bg-primary)
+}
+
+a {
+     text-decoration: none;
+     color: inherit;
+}
+
+header {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    
+}
+.navbar {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 2rem 2rem;
+
+}
+
+.logo {
+     width: 6rem;
+}
+.navbar nav ul {
+     display: flex;
+     list-style-type: none;
+}
+
+.navbar nav ul li {
+     padding: 1rem 0;
+     margin: 0rem 1rem;
+     cursor: pointer;
+     color: rgba(12, 12, 12, 0.702);
+
+}
+.navbar nav ul li:hover {
+     color: black;
+}
+
+.nav-btn {
+     padding: 0.8rem 2rem;
+     color: #07A2F4;
+     border: 2px solid #07A2F4;
+     border-radius: 5px;
+     background-color: transparent;
+     margin: 0rem 1.5rem;
+}
+.header-text {
+     display: flex;
+     margin-top: 3rem;
+}
+
+.left-header-text {
+     flex: 1;
+     padding: 1rem 3rem 1rem 1rem;
+}
+.left-header-text h1 {
+     font-size: 3rem;
+     margin-bottom: 2rem;
+     font-weight: 700;
+}
+.left-header-text p {
+     margin-bottom: 2rem;
+}
+.right-header-text {
+     flex: 1;
+}
+.right-header-text img{
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding-top: 2rem;
+}
+.second-section {
+   
+     height: 550px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.second-section-left{
+     flex: 1;
+}
+.second-section-left img{
+     margin-right: 2rem;
+     width: 80%;
+}
+.second-section-right{
+     flex: 1;
+}
+.second-section-right h1{
+     font-size: 3rem;
+}
+
+.read-more-btn {
+     font-size: large;
+     padding: 1rem 3rem;
+     width: fit-content;
+}
+
+.third-section {
+   
+     height: 550px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.third-section-left{
+     flex: 1;
+}
+.third-section-right img{
+     float: left;
+     margin-left: 2rem;
+}
+.third-section-right{
+     flex: 1;
+}
+.third-section-left h1{
+     font-size: 3rem;
+}
+.services-head {
+     display: flex;
+     align-items: center;
+ }
+ .services-head h1{
+     flex:1;
+ }
+ .services-head p{
+     display: flex;
+     flex:1;
+     margin-left: 5rem;
+ }
+ .services-head {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+ .services-types-cards {
+     margin-top: 3rem;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+}
+.service-card {
+     width: 350px;
+     margin: 0.4rem;
+     height: 250px;
+     padding: 1rem ;
+}
+.service-card img{
+     width: 3rem;
+}
+.service-card h2{
+     padding: 1rem 0rem ;
+}
+
+.service-card p {
+     font-size: 0.85rem;
+}
+.pricing {
+     margin-bottom: 2rem;
+     margin-top: 3rem;
+     height: 2320px;
+     background-image: linear-gradient(to right bottom, #09bcf8, #00b6f8, #00aff7, #00a9f6, #00a2f5, #009cf4, #0097f3, #0091f2, #008af1, #0083f0, #007cef, #0675ed);
+}
+.pricing h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0rem;
+}
+
+.price-cards {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     color: var(--clr-black-primary);
+}
+.price-card {
+     background-color: white;
+     border-radius: 10px;
+}
+.price-card-head {
+     padding: 1rem 3rem;
+}
+.popular-pack-card-head{
+     border-radius: 5px;
+     color: white;
+     background-color: var(--clr-black-primary);
+}
+.price-card ul li {
+     padding: 1rem 2rem;
+     
+}
+.price-card ul {
+     margin-bottom: 3rem ;
+     font-weight: 500;
+}
+.btn.read-more-btn {
+    position: relative;
+    top: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: large;
+    color: white;
+    background-image: linear-gradient(to right bottom, #09baf8, #00a7fa, #0093f9, #007df4, #0565ea);
+    box-shadow: 0px 3px 9px 7px #cadff4;
+}
+.btn{
+   
+    position: relative;
+    top: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: large;
+    color: white;
+    background-image: linear-gradient(to right bottom, #09baf8, #00a7fa, #0093f9, #007df4, #0565ea);
+    box-shadow: 0px 3px 9px 7px #cadff4;
+
+}
+
+.price-money {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding: 1rem 0rem 2rem 0rem;
+}
+.cancel-text {
+     color:#798196 ;
+}
+.price-money-heading {
+     font-size: 2rem;
+     font-weight: bold;
+     margin-bottom: 1rem;
+     color: var(--clr-black-primary);
+}
+.price-money-heading span{
+    color: #798196;
+}
+
+.fa-regular.fa-circle-check {
+     color: #2DDCAE;
+     font-size: large;
+}
+.customer-review-section {
+     height: 900px;
+}
+.customer-review-section-head {
+     text-align: center;
+     padding: 3rem 15rem;
+}
+
+.customer-review-section-head p {
+     padding: 1rem 0rem 0rem 0rem;
+}
+
+.customer-review-section-cards {
+     display: flex;
+     flex-wrap: wrap;
+}
+.reivew-card {
+     border-radius: 10px;
+     padding: 2rem;
+     margin: 1rem;
+     height: 240px;
+     width: 505px;
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.reivewer {
+     display: flex;
+     padding: 1rem 0rem;
+     margin-top: 1rem;
+     align-items: center;
+}
+.reivewer img{
+     margin: 0rem 1rem;
+     width: 5rem;
+}
+.reivewer p {
+     margin-top: 0.5rem;
+}
+.quit-worrying-section {
+     background-color: var(--clr-bg-primary);
+     display: flex;
+     padding: 5rem 8rem;
+     color: white;
+     align-items: center;
+     margin-top: 800px;
+     justify-content: space-between;
+}
+.quit-worrying-section-left{
+     flex: 1;
+}
+.quit-worrying-section-left h1 {
+     margin-bottom: 1rem;
+
+}
+.quit-worrying-section-right{
+     flex: 1;
+}
+.quit-worrying-btn {
+     float: right;
+     border: 1px solid white;
+     color: white;
+}
+.footer {
+     display: flex;
+     padding: 5rem 0rem;
+     justify-content: space-between;
+}
+
+.links-head {
+     font-size: larger;
+     font-weight:700;
+     margin-bottom: 0.5rem;
+}
+.site-details {
+     width: 15rem;
+}
+.footer-logo{
+     width: 6rem;
+     margin-bottom: 0.5rem;
+}
+
+.social-imgs{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.link-item {
+     margin-bottom: 0.5rem;
+     cursor: pointer;
+}
+.social-imgs img {
+     width: 2rem;
+     margin: 0.1rem;
+     cursor: pointer;
+}
+.transparant-btn{
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right bottom, #09baf8, #00a7fa, #0093f9, #007df4, #0565ea);
+    border-image-slice: 1;
+    padding: 10px;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    background: linear-gradient(to right bottom, #09baf8, #00a7fa, #0093f9, #007df4, #0565ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+    </style>
+    <link rel="stylesheet" href="./style-mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  
+  </head>
+  
+  <body>
+  
+    <header class="container">
+      <div class="navbar container">
+        <div class="logo-div">
+          <img src="./images-mobile/Logo.png" class="logo" alt="">
+        </div>
+        <nav>
+          <ul>
+            <li><a href=""> Home</a></li>
+            <li>Domain</li>
+            <li><a href="#hosting">Hosting</a></li>
+            <li><a href="#hosting">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li>About Us</li>
+            <li class="nav-btn">Ragister Now</li>
+          </ul>
+          <div class="ham"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg></div>
+        </nav>
+      </div>
+    
+      <div class="header-text">
+        <div class="left-header-text">
+          <h1>Great Websites Start With Unlimited Hosting</h1>
+          <p>
+            We provide the best offer of unlimited web hosting. The most complet
+            featues, affordable prices, and 24/7 technical support are at your
+            disposal.
+          </p>
+          <button class="btn">Choose Pakage</button>
+        </div>
+        <div class="right-header-text">
+          <img src="./images-mobile/server.svg" alt="">
+        </div>
+      </div>
+    </header>
+  
+    <section class="second-section container">
+      <div class="second-section-left">
+        <img src="./images-mobile/testing.svg" alt="">
+      </div>
+      <div class="second-section-right">
+        <h1 class="mb-2">We Provide The Best Quality With Low Cost</h1>
+        <p class="mb-2">
+          You can have a ready-made website for only a small fee. Complete
+          features will facilitate the website creation process, from
+          Auto-install wordpress, cPanel, to free SSL
+        </p>
+        <button class="btn read-more-btn">Read More</button>
+      </div>
+    </section>
+   
+    <section class="third-section container">
+      <div class="third-section-left">
+        <h1 class="mb-2">Number 1 Technical Support in INdonesia</h1>
+        <p class="mb-2">
+          contact Niagahoster's Customer Success Agent at any time when there is
+          a problem with your website. No need to wait long, your problem will
+          be resolved quickly and in real-time via intercom's live-chat
+        </p>
+        <div class="btn read-more-btn">Read More</div>
+      </div>
+      <div class="third-section-right">
+        <img src="./images-mobile/technical support illustration-01.svg" alt="">
+      </div>
+    </section>
+    
+    <section class="services container" id="hosting">
+      <div class="services-head mb-2">
+        <h1>Services We Provide At ThorHosting</h1>
+        <p>
+          Contact Niagahoster's Customer Success Agent at any time when there is
+          a problem with your website. No need to wait long, your problem will
+          be resolved quickly
+        </p>
+      </div>
+      <div class="services-types-cards">
+        <div class="service-card card-1">
+          <img src="./images-mobile/cloud-hosting.svg" alt="">
+          <h2>Unlimited Hosting</h2>
+          <p>
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolores magnam ipsa possimus molestiae similique
+odio recusandae quos.
+          </p>
+        </div>
+        <div class="service-card card-2">
+          <img src="./images-mobile/cloud-hosting.svg" alt="">
+          <h2>Cloud Hosting</h2>
+          <p>
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolores magnam ipsa possimus molestiae similique
+odio recusandae quos.
+          </p>
+        </div>
+        <div class="service-card card-3">
+          <img src="./images-mobile/wordpress-hosting.svg" alt="">
+          <h2>Wordpress Hosting</h2>
+          <p>
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolores magnam ipsa possimus molestiae similique
+odio recusandae quos.
+          </p>
+        </div>
+        <div class="service-card card-4">
+          <img src="./images-mobile/vps.svg" alt="">
+          <h2>Fastest VPS</h2>
+          <p>
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolores magnam ipsa possimus molestiae similique
+odio recusandae quos.
+          </p>
+        </div>
+        <div class="service-card card-5">
+          <img src="./images-mobile/Domain.svg" alt="">
+          <h2>Domain</h2>
+          <p>
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolores magnam ipsa possimus molestiae similique
+odio recusandae quos.
+          </p>
+        </div>
+        <div class="service-card card-6">
+          <img src="./images-mobile/builder.svg" alt="">
+          <h2>website Builder</h2>
+          <p>
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolores magnam ipsa possimus molestiae similique
+odio recusandae quos.
+          </p>
+        </div>
+      </div>
+    </section>
+   
+    <section class="pricing" id="pricing">
+      <h1>Flexible &amp; Transparant Pricing</h1>
+      <div class="price-cards container">
+      
+        <div class="starter-pack-card price-card">
+          <div class="starter-pack-card-head price-card-head">
+            <h2>Starter Pack</h2>
+            <p class="mb-2">Suitable for beginners</p>
+          </div>
+          <ul>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>&nbsp; &nbsp; Up To 15,000
+              visitors/month
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>&nbsp; &nbsp; Dist Space
+              500 MB
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>&nbsp; &nbsp; Unlimited
+              Bandwidth
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>&nbsp; &nbsp; Unlimited
+              Database
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>&nbsp; &nbsp; 1 Domain
+            </li>
+          </ul>
+          <div class="price-money">
+            <p class="price-money-heading">$29<span>/month</span></p>
+            <p class="cancel-text">cancel anytime</p>
+            <button class="transparant-btn">Choose Plan</button>
+          </div>
+        </div>
+
+       
+        <div class="popular-pack-card price-card">
+          <div class="popular-pack-card-head price-card-head">
+            <h2>Popular Package</h2>
+            <p class="mb-2">Suitable for company, organization</p>
+          </div>
+          <ul>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>&nbsp; &nbsp; Up To 15,000
+              visitors/month
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>&nbsp; &nbsp; Unlimited
+              Dist
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>&nbsp; &nbsp; Unlimited
+              Bandwidth
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>&nbsp; &nbsp; Unlimited
+              POP3 Email
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>&nbsp; &nbsp; Unlimited
+              Database
+            </li>
+          </ul>
+          <div class="price-money">
+            <p class="price-money-heading">$29<span>/month</span></p>
+            <p class="cancel-text">cancel anytime</p>
+            <button class="btn mt-2 popular-pack-card-btn">Choose Plan</button>
+          </div>
+        </div>
+      
+        <div class="business-pack-card price-card">
+          <div class="business-pack-card-head price-card-head">
+            <h2>Business Package</h2>
+            <p class="mb-2">Suitable for business websites</p>
+          </div>
+          <ul>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>&nbsp; &nbsp; Up To
+              180,000 visitors/month
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>&nbsp; &nbsp; Unlimited
+              Dist Space
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>&nbsp; &nbsp; Unlimited
+              Bandwidth
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>&nbsp; &nbsp; Unlimited
+              Database
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>&nbsp; &nbsp; 1 Domain
+            </li>
+          </ul>
+          <div class="price-money">
+            <p class="price-money-heading">$29<span>/month</span></p>
+            <p class="cancel-text">cancel anytime</p>
+            <button class="transparant-btn">Choose Plan</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="customer-review-section container">
+      <div class="customer-review-section-head">
+        <h1>Our Customer Love Us</h1>
+        <p>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do aet
+          sint. Velit officia consequal duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </div>
+      <div class="customer-review-section-cards container">
+   
+        <div class="reivew-card">
+          <p>
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolores magnam ipsa possimus molestiae similique
+odio recusandae quos.
+          </p>
+          <div class="reivewer">
+            <img src="./images-mobile/profile-holder.png" alt="">
+            <div class="reivewer-details">
+              <h4>Michal Andrew</h4>
+              <p>CEO Apple inc.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="reivew-card">
+          <p>
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolores magnam ipsa possimus molestiae similique
+odio recusandae quos.
+          </p>
+          <div class="reivewer">
+            <img src="./images-mobile/profile-holder.png" alt="">
+            <div class="reivewer-details">
+              <h4>Michal Andrew</h4>
+              <p>CEO Apple inc.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="reivew-card">
+          <p>
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolores magnam ipsa possimus molestiae similique
+odio recusandae quos.
+          </p>
+          <div class="reivewer">
+            <img src="./images-mobile/profile-holder.png" alt="">
+            <div class="reivewer-details">
+              <h4>Michal Andrew</h4>
+              <p>CEO Apple inc.</p>
+            </div>
+          </div>
+        </div>
+       
+        <div class="reivew-card">
+          <p>
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolores magnam ipsa possimus molestiae similique
+odio recusandae quos.
+          </p>
+          <div class="reivewer">
+            <img src="./images-mobile/profile-holder.png" alt="">
+            <div class="reivewer-details">
+              <h4>Michal Andrew</h4>
+              <p>CEO Apple inc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="quit-worrying-section">
+      <div class="quit-worrying-section-left">
+        <h1>Quit Worrying about Oce-Hosting Services</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolores magnam ipsa possimus molestiae similique
+odio recusandae quos.
+        </p>
+      </div>
+      <div class="quit-worrying-section-right">
+        <button class="quit-worrying-btn transparant-btn-eh" style="">Register Now</button>
+      </div>
+    </section>
+   
+    <div class="footer container">
+      <div class="site-details">
+        <img src="./images-mobile/Logo.png" class="footer-logo" alt="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolores magnam ipsa possimus molestiae similique
+            odio recusandae quos.</p>
+       </div>
+      <div class="menu">
+        <ul>
+          <li class="links-head">Menu</li>
+          <li class="link-item">Home</li>
+          <li class="link-item">Covid19</li>
+          <li class="link-item">Vaccine info</li>
+          <li class="link-item">Contact Us</li>
+        </ul>
+        </div>
+      <div class="Links">
+        <ul>
+          <li class="links-head">Links</li>
+          <li class="link-item">Partners</li>
+          <li class="link-item">Careers</li>
+          <li class="link-item">Press</li>
+          <li class="link-item">Community</li>
+        </ul>
+        </div>
+      <div class="Overview">
+        <ul>
+          <li class="links-head">Overview</li>
+          <li class="link-item">Terms &amp; Conditions</li>
+          <li class="link-item">Privacy policy</li>
+          <li class="link-item">FAQ</li>
+        </ul>
+        </div>
+        <div class="social-media">
+          <div class="links-head">Social Media</div>
+          <div class="social-imgs">
+            <img src="./images-mobile/fb.svg" alt="">
+            <img src="./images-mobile/ig.svg" alt="">
+            <img src="./images-mobile/youtube.svg" alt="">
+            <img src="./images-mobile/linked-in.svg" alt="">
+          </div>
+        </div>
+      </div>
+    <!-- to change it to desktop view -->
+      <script type="text/javascript">
+
+        var doRelocation = function() {
+        
+            var currentWidth = window.innerWidth,
+                breakpoint = 800,
+                newLocation = 'index.html';
+        
+            if (currentWidth > breakpoint) {
+                window.location.replace(newLocation);
+            }
+        
+        }
+        
+        doRelocation();
+        
+        window.addEventListener('resize', doRelocation);
+        
+        </script>
+
+</body></html>

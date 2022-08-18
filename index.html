@@ -5,8 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+
+      var doRelocation = function() {
+      
+          var currentWidth = window.innerWidth,
+              breakpoint = 800,
+              newLocation = 'mobile.html';
+      
+          if (currentWidth < breakpoint) {
+              window.location.replace(newLocation);
+          }
+      
+      }
+      
+      doRelocation();
+      
+      window.addEventListener('resize', doRelocation);
+      
+      </script>
+
+
     <title>Document</title>
   </head>
+  
   <body>
     <!-- Header Starts -->
     <header>
@@ -660,9 +682,7 @@
 
 
 
-
-
-
+         
 
 
 
@@ -680,5 +700,7 @@
       All illustaration and photos are also given. In case anything is missing,
       please add it from your side. It's time that you use brain.exe
     </p> -->
+    <!-- to change to mobile view -->
+   
   </body>
 </html>
